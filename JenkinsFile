@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+             git 'https://github.com/esheddelarea/mySoftware.git'
+             sh 'python3 click.py'
             }
         }
     }
